@@ -9,6 +9,16 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<div id="navBorder">
+  <ul class="nav navbar-nav">
+    <h1>Animal Group</h1>
+      <li><%= link_to 'Animal', animals_path %></li>
+      <li><%= link_to 'Disease', diseases_path %></li>
+      <li><%= link_to 'Infection', infections_path %></li>
+      <li><%= link_to 'Owner', owners_path %></li>
+  </ul>
+</div>
+
   <body>
     <%= yield %>
   </body>
